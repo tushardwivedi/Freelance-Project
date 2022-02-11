@@ -82,6 +82,7 @@ nav ul li a {
 #hamburger-menu #sidebar-menu {
     visibility: hidden;
     position: fixed;
+    right: 100px;
     top: 0;
     width: 30%;
     height: 100%;
@@ -136,7 +137,7 @@ nav ul li a {
 }
 
 .container .row {
-    margin-top: 134px;
+    margin-top: 50px;
 }
 
 .col-2 {
