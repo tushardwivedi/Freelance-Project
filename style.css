@@ -636,7 +636,16 @@ hr {
         font-size: 56px;
         line-height: 60px;
     }
-
+    
+    header {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 5%;
+    height: 84px;
+    box-shadow: 0px 2px 4px #00000014;
+    }
 }
 
 @media only screen and (max-width: 800px) {
