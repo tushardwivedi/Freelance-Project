@@ -88,8 +88,6 @@ nav ul li a {
     position: fixed;
     right: -50%;
     top:84px;
-    right: 100px;
-    top: 0;
     width: 30%;
     height: calc(100% - 84px);
     background-color: rgba(64, 123, 255, 1);
@@ -725,7 +723,6 @@ hr {
     .web{
         margin-left: 20px;
     }
-    
     header
     {
         position: sticky;
@@ -740,4 +737,8 @@ hr {
         font-size: 14px;
 
     }
+}
+@media only screen and (max-width: 500px)
+{
+    
 }
