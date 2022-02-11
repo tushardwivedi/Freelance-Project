@@ -35,9 +35,12 @@ header {
     box-shadow: 0px 2px 4px #00000014;
     z-index: 4;
     background-color: #fff;
+<<<<<<< HEAD
     position: fixed;
     top: 0;
     width: 100%;
+=======
+>>>>>>> 76b44614ea69063a45ae9bfd4c6785781bd407ee
 }
 
 .logo {
@@ -86,8 +89,13 @@ nav ul li a {
 #hamburger-menu #sidebar-menu {
     visibility: hidden;
     position: fixed;
+<<<<<<< HEAD
     right: -50%;
     top:84px;
+=======
+    right: 100px;
+    top: 0;
+>>>>>>> 76b44614ea69063a45ae9bfd4c6785781bd407ee
     width: 30%;
     height: calc(100% - 84px);
     background-color: rgba(64, 123, 255, 1);
@@ -145,7 +153,7 @@ nav ul li a {
 }
 
 .container .row {
-    margin-top: 134px;
+    margin-top: 50px;
 }
 
 .col-2 {
@@ -723,6 +731,7 @@ hr {
     .web{
         margin-left: 20px;
     }
+<<<<<<< HEAD
     header
     {
         position: sticky;
@@ -742,3 +751,6 @@ hr {
 {
     
 }
+=======
+}
+>>>>>>> 76b44614ea69063a45ae9bfd4c6785781bd407ee
