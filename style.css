@@ -10,6 +10,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+
 }
 
 a {
@@ -36,7 +37,6 @@ header {
     background-color: #fff;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
 }
 
@@ -86,14 +86,18 @@ nav ul li a {
 #hamburger-menu #sidebar-menu {
     visibility: hidden;
     position: fixed;
-    top: 0;
-    right: -250px;
+    right: -50%;
+    top:84px;
     width: 30%;
-    height: 100%;
+    height: calc(100% - 84px);
     background-color: rgba(64, 123, 255, 1);
-    transition: 0.3s;
+    transition: all ease-in 0.5s;
     padding: 0px 10px;
     box-sizing: border-box;
+    -webkit-transition: all ease-in 0.5s;
+    -moz-transition: all ease-in 0.5s;
+    -ms-transition: all ease-in 0.5s;
+    -o-transition: all ease-in 0.5s;
 }
 
 #hamburger-menu ul {
@@ -636,10 +640,9 @@ hr {
         font-size: 56px;
         line-height: 60px;
     }
-
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 880px) {
     #menu-items {
         display: none;
     }
@@ -647,7 +650,22 @@ hr {
     #hamburger-menu {
         display: inline;
     }
+    header
+    {
+        position: sticky;
+        top: 0;
+        justify-content: space-between;
+    }
+    .logo{
+        flex-grow: 1;
+    }
+    .boook{
+        margin-right: 20px;
+        padding: 0 15px;
+        height: 35px;
+        font-size: 15px;
 
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -705,4 +723,22 @@ hr {
     .web{
         margin-left: 20px;
     }
+    header
+    {
+        position: sticky;
+        top: 0;
+        justify-content: space-between;
+    }
+    
+    .boook{
+        margin-right: 20px;
+        padding: 0 15px;
+        height: 35px;
+        font-size: 14px;
+
+    }
+}
+@media only screen and (max-width: 500px)
+{
+    
 }

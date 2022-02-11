@@ -19,28 +19,28 @@
 </head>
 
 <body>
-    <header data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+    <header data-aos="fade-right" data-aos-duration="1500" data-aos-once="true" id="header">
         <div class="logo">Interloop</div>
         <nav id="menu-items">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact-Us</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Product</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contactus">Contact-Us</a></li>
             </ul>
         </nav>
         <a href="#" class="productbook">
             <button class="boook">Book Product</button>
         </a>
-        <button id="hamburger-menu">
+        <button id="hamburger-menu" onclick="myFunction()">
             <nav id="sidebar-menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact-Us</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Product</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contactus">Contact-Us</a></li>
                 </ul>
             </nav>
         </button>
@@ -92,7 +92,7 @@
 
     <!-- About Us -->
     <div id="about">
-        <div class="row" data-aos="fade-right" data-aos-duration="1500">
+        <div class="row" data-aos="fade-down" data-aos-duration="1500">
             <div class="column-2">
                 <img src="images/SavingMoney.gif">
             </div>
@@ -105,7 +105,7 @@
                 <a href="" class="butn">Learn More &#8594</a>
             </div>
         </div>
-        <div class="row" data-aos="fade-left" data-aos-duration="1500">
+        <div class="row" data-aos="fade-up" data-aos-duration="1500">
             <div class="column-2">
                 <p class="tophead">USE ANYTIME</p>
                 <h1>Use Anytime when you need</h1>
@@ -187,7 +187,7 @@
     </div>
 
     <!-- FAQ -->
-    <div class="frequent" data-aos="fade-up" data-aos-duration="2000">
+    <div class="frequent" data-aos="fade-up" data-aos-duration="2000" id="contactus">
         <div class="faq">
             <div class="text-block">
                 <div class=ques1>
@@ -267,6 +267,11 @@
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        function myFunction() {
+
+        }
+    </script>
     <script>
         AOS.init({
             duration: 10000,
