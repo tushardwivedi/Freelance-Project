@@ -204,14 +204,25 @@ nav ul li a {
 
 /* Mockup-Dashboard */
 
-.overlap-group {
+.overlap-group{
     margin-top: 30px;
+    background: url(images/Group36.svg);
+    background-size: cover;
+    height: 100%;
+    max-width: 100%;
 }
 
-.overlap-group img {
-    width: 100%;
+.dashimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.dashimage img{
+    margin-top: 70px;
+    padding: 30px;
+    width: 80%;
+}
 
 /* Old vs New */
 
@@ -484,7 +495,8 @@ nav ul li a {
     margin-top: 100px;
     background: url(images/faq_bg.svg);
     background-size: cover;
-    height: 660px;
+    height: 100%;
+    max-width: 100%;
 }
 
 .faq {
@@ -494,66 +506,42 @@ nav ul li a {
 }
 
 .text-block {
-    margin-top: 100px;
+    margin-top: 70px;
     background-color: #fff;
     padding: 30px;
     box-shadow: 2px 5px 10px rgb(223, 220, 220);
-    max-width: 80%;
+    width: 80%;
 }
 
-.question {
+.row {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.ques-left {
-    display: inline-flex;
-    align-items: center;
-}
-
-.ques2, .ques3 {
-    margin-top: 30px;
-}
-
-.number {
-    color: rgba(52, 52, 52, 0.6);
-    font-size: 36px;
-    font-family: 'Inter';
-}
-
-.ques {
-    color: black;
-    font-size: 24px;
-    padding-left: 20px;
-    font-weight: 500;
-}
-
-#answer {
-    padding-left: 20px;
-    color: rgba(52, 52, 52, 0.6);
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.contact {
-    display: flex;
     flex-wrap: wrap;
-    padding-left: 15px;
-    padding-right: 15px;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-around;
 }
 
-.contact p {
-    color: black;
-    font-size: 18px;
-    font-weight: 400 !important;
-    padding-top: 20px;
+.col2 {
+    text-align: center;
+    flex-basis: 50%;
+    min-width: 250px;
+}
+
+.col2 img {
+    max-width: 100%;
+    padding: 0 25px;
+}
+
+.col2 h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.col2 a{
+    font-size: 38px;
 }
 
 hr {
-    margin-top: 50px;
+    margin-top: 35px;
     width: 100%;
 }
 
@@ -610,11 +598,6 @@ hr {
 }
 
 @media only screen and (max-width: 1000px) {
-    .frequent {
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
     .product .col-2 p {
         font-size: 18px;
         padding-left: 20px;
@@ -668,6 +651,13 @@ hr {
     }
 }
 
+@media only screen and (max-width: 750px) {
+    .frequent {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     * {
         margin: 0;
@@ -700,20 +690,12 @@ hr {
         text-align: center;
     }
 
-    .ques2, .ques3 {
-        margin-top: 20px;
-    }
-    
-    .number {        
+    .col2 h1{
         font-size: 24px;
     }
-    
-    .ques {
-        font-size: 16px;
-    }
-    
-    #answer {
-        font-size: 10px;
+
+    .col2 a{
+        font-size: 24px;
     }
 
     #hamburger-menu #sidebar-menu {
@@ -723,6 +705,7 @@ hr {
     .web{
         margin-left: 20px;
     }
+
     header
     {
         position: sticky;
@@ -735,10 +718,11 @@ hr {
         padding: 0 15px;
         height: 35px;
         font-size: 14px;
-
     }
-}
-@media only screen and (max-width: 500px)
-{
-    
+
+    .dashimage img{
+        margin-top: 50px;
+        padding: 20px;
+        width: 80%;
+    }
 }
